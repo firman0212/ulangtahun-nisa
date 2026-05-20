@@ -93,5 +93,6 @@ audioToggle.addEventListener('click', () => {
     }
 });
 
+
 updateNavigationStatus();
 updateProgressBar();

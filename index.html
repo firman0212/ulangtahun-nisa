@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -12,6 +13,7 @@
     <div class="progress-container">
         <div class="progress-bar" id="myProgressBar"></div>
     </div>
+    
 
     <!-- Audio Background (Instrumen Piano Klasik Lembut) -->
     <audio id="birthday-audio" loop>
@@ -23,7 +25,7 @@
         <!-- SLIDE 1: FOTO UTAMA (FULL SCREEN) -->
         <div class="slide slide-1 active">
             <div class="photo-container">
-                <img src="foto1.jpg" alt="Foto 1">
+                <img src="foto1.png" alt="Foto 1">
             </div>
             <div class="header-name-hero">Happy Birthday, Nisa Aulia</div>
         </div>
@@ -67,7 +69,7 @@
         <!-- SLIDE 5: HARAPAN MASA DEPAN -->
         <div class="slide">
             <div class="photo-container">
-                <img src="foto5.jpg" alt="Foto 5">
+                <img src="foto5.png" alt="Foto 5">
             </div>
             <div class="content-right">
                 <div class="header-name">Happy Birthday, Nisa Aulia</div>
@@ -87,19 +89,54 @@
                 <p>Di balik setiap langkah, doa-doamu adalah kekuatan yang paling sunyi namun paling nyata. Terima kasih atas cinta tanpa syarat, kesabaran yang tak pernah habis, dan kasih sayang yang membesarkanku hingga hari ini.</p>
             </div>
         </div>
+<!-- SLIDE 7: FINAL PREMIUM -->
+<div class="slide slide-final">
+    <!-- Overlay -->
+    <div class="hero-overlay"></div>
 
-        <!-- SLIDE 7: PENUTUP FINAL WITH INTERACTIVE ENVELOPE (FITUR 3) -->
-        <div class="slide slide-final">
-            <!-- Amplop Surat Interaktif -->
-            <div class="envelope-wrapper" id="envelope" onclick="openLetter()">
-                <div class="envelope">
-                    <div class="flap"></div>
-                    <div class="pocket"></div>
-                    <div class="letter-preview">
-                        <p>Klik untuk Membuka Surat ✨</p>
-                    </div>
-                </div>
+    <!-- Amplop -->
+    <div class="envelope-wrapper" id="envelope" onclick="openLetter()">
+
+        <div class="envelope">
+
+            <div class="flap"></div>
+
+            <div class="pocket"></div>
+
+            <div class="letter-preview">
+                <p>Open Letter ✨</p>
             </div>
+
+        </div>
+
+    </div>
+
+    <!-- Isi Surat -->
+   <div class="content-full hidden-letter" id="actual-letter">
+
+    <img src="foto7.png" alt="Background" class="letter-bg-photo">
+
+    <div class="header-name">
+        FOR NISA AULIA
+    </div>
+        <h2>
+            Untuk Kamu.
+        </h2>
+
+        <p>
+            Selamat ulang tahun, Nisa.<br><br>
+
+            Semoga semua hal baik perlahan datang menghampirimu.
+            Semoga langkahmu selalu dipenuhi ketenangan,
+            dan semoga dunia selalu memperlakukanmu dengan lembut.<br><br>
+
+            Jangan terlalu keras pada dirimu sendiri.
+            Kamu sudah hebat sampai sejauh ini.<br>
+        </p>
+
+    </div>
+
+</div>
 
             <!-- Konten Utama (Muncul setelah amplop diklik) -->
             <div class="content-full hidden-letter" id="actual-letter">
@@ -127,8 +164,15 @@
         </button>
     </div>
 
-    <!-- Nama Pembuat -->
-    <div class="credits">Created | Firmansyah</div>
+<div class="credits">
+
+    <span>Created</span>
+
+    <img src="logo.png" alt="Logo" class="footer-logo">
+
+    <span>Firman</span>
+
+</div>
 
     <script src="script.js"></script>
 </body>
